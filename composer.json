@@ -21,8 +21,8 @@
     },
 
     "autoload": {
-        "psr-0": {
-            "Kravcik\\Macros": "src/"
+        "psr-4": {
+            "Kravcik\\Macros\\": "src/"
         }
     }
 }
