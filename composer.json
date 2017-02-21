@@ -1,7 +1,7 @@
 {
     "name": "kravcik/nette-macro-fontawesome",
     "type": "library",
-    "description": "Simple macro for Nette framework, which allow short entry of fotn-awesome icons.",
+    "description": "Simple macro for Nette framework, which allow short entry of font-awesome icons.",
     "keywords": ["nette", "macro", "font awesome"],
     "homepage": "https://github.com/kravcik/nette-macro-fontawesome",
     "license": "MIT",
