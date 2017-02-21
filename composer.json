@@ -21,8 +21,8 @@
     },
 
     "autoload": {
-        "psr-4": {
-            "files": ["src/FontAwesomeMacro.php"]
+        "psr-0": {
+            "Kravcik\\Macros": "src/"
         }
     }
 }
