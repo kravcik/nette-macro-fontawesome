@@ -7,6 +7,15 @@ namespace Kravcik\Macros;
 
 class FontAwesomeMacro extends \Latte\Macros\MacroSet
 {
+    private static $colorClass = [
+        'success',
+        'info',
+        'danger',
+        'warning',
+        'default',
+        'primary'
+    ];
+    
     /**
      * Install macro
      * 
@@ -42,7 +51,7 @@ class FontAwesomeMacro extends \Latte\Macros\MacroSet
      * @param string $icon
      * @param array $arguments (see options)
      * 
-     * @option string color (set color - e.g. red) - generate color-red
+     * @option string color (set color - e.g. red) - generate color-red || ignore (bootstrap class like success
      * @option int size (set size - e.g. 2) - generate 2x
      * @option bool fixed-width (default TRUE)
      * 
@@ -62,7 +71,8 @@ class FontAwesomeMacro extends \Latte\Macros\MacroSet
         if(isset($arguments['color']) || ($isIndex && isset($arguments[0])))
         {
             $color = isset($arguments['color']) ? $arguments['color'] : $arguments[0];
-            $class[] = 'color-' . $color;
+                        
+            $class[] = in_array($color, self::$colorClass) ? 'text-' . $color : 'color-' . $color;
         }
         
         /**
