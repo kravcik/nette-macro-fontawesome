@@ -61,7 +61,7 @@ class FontAwesomeMacro extends \Latte\Macros\MacroSet
     {
         $isIndex = array_values($arguments) === $arguments;
         
-        $el = \Nette\Utils\Html::el('span');
+        $el = \Nette\Utils\Html::el(isset($arguments['el']) ? $arguments['el'] : 'span');
         $class = [];
         $class[] = 'fa fa-' . $icon;
         
