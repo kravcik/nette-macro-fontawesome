@@ -1,6 +1,6 @@
 Simple macro for generate Font Awesome icon. First parameter is required, it's icon name without `fa-`. Parameters can be set in order or randomly with string keys (macro detect if getting associative array).
 
-## Register to template
+## Register to config.neon
 
 ```
 latte:
