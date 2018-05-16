@@ -1,5 +1,13 @@
 Simple macro for generate Font Awesome icon. First parameter is required, it's icon name without `fa-`. Parameters can be set in order or randomly with string keys (macro detect if getting associative array).
 
+## Register to template
+
+```
+latte:
+    macros:
+        - Kravcik\Macros\FontAwesomeMacro::install
+```
+
 Thx [@peldax](https://github.com/peldax) is also  possible change html element. Default is span.
 
 `{icon star, 'el' => 'i'}` -> `<i class="fa fa-star fa-fw"></i>`
