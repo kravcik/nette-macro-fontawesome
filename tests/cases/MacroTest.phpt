@@ -44,6 +44,7 @@ class MacroTest extends \Tester\TestCase
     public function testSize()
     {
         Assert::same('<span class="fal fa-star fa-2x fa-fw"></span>', $this->render('size.latte'));
+        Assert::same('<span class="fal fa-star fa-lg fa-fw"></span>', $this->render('size-lg.latte'));
     }
 
     /**

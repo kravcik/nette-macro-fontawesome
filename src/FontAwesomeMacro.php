@@ -82,7 +82,14 @@ class FontAwesomeMacro extends \Latte\Macros\MacroSet
         if(isset($arguments['size']) || ($isIndex && isset($arguments[1])))
         {
             $size = isset($arguments['size']) ? $arguments['size'] : $arguments[1];
-            $class[] =  'fa-' . $size . 'x';
+            if(is_numeric($size))
+            {
+                $class[] =  'fa-' . $size . 'x';
+            }
+            else
+            {
+                $class[] =  'fa-' . $size;
+            }
         }
 
         /**

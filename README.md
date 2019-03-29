@@ -23,6 +23,9 @@ Thx [@peldax](https://github.com/peldax) is also  possible change html element. 
 `{icon star, red}` -> `<span class="fal fa-star color-red fa-fw"></span>`
 
 
+`{icon star, NULL, lg}` -> `<span class="fal fa-star fa-lg fa-fw"></span>`
+
+
 `{icon star, yellow, 2}` -> `<span class="fal fa-star color-yellow fa-2x fa-fw"></span>`
 
 
