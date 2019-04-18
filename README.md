@@ -29,8 +29,12 @@ Thx [@peldax](https://github.com/peldax) is also  possible change html element. 
 `{icon star, yellow, 2}` -> `<span class="fal fa-star color-yellow fa-2x fa-fw"></span>`
 
 
- `{icon star, size => 2, fw => TRUE, color => 'green-light'}` -> `<span class="fal fa-star color-green-light fa-2x"></span>`
+`{icon star, blue, 2, TRUE, 'far'}` -> `<span class="far fa-star color-blue fa-2x"></span>`
+
+
+ `{icon star, size => 2, fw => TRUE, color => 'green-light', style => 'fas'}` -> `<span class="fas fa-star color-green-light fa-2x"></span>`
  
 1. `color-` + COLOR 
 2. `fa-` + SIZE + `x`
 3. FW - if TRUE disable insert of `fa-fw`
+4. Style - `fas` / `far` / `fal` / `fab`

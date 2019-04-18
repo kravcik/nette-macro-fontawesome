@@ -71,6 +71,14 @@ class MacroTest extends \Tester\TestCase
         Assert::same('<span class="fal fa-star color-red-light fa-5x fa-fw"></span>', $this->render('keys.latte'));
     }
 
+    /**
+     * Style variant {icon star, NULL, NULL, NULL, far}
+     */
+    public function testStyle()
+    {
+        Assert::same('<span class="far fa-star fa-fw"></span>', $this->render('style.latte'));
+    }
+
 }
 
 $macroTest = new MacroTest;
