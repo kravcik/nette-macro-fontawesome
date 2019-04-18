@@ -64,7 +64,6 @@ class FontAwesomeMacro extends \Latte\Macros\MacroSet
 
         $el = \Nette\Utils\Html::el(isset($arguments['el']) ? $arguments['el'] : 'span');
         $class = [];
-        $class[] = 'fal fa-' . $icon;
 
         /**
          * Color argument
@@ -99,6 +98,17 @@ class FontAwesomeMacro extends \Latte\Macros\MacroSet
         {
             $class[] = 'fa-fw';
         }
+
+        if(isset($arguments['style']) || ($isIndex && isset($arguments[3])))
+        {
+            $style = isset($arguments['style']) ? $arguments['style'] : $arguments[3];
+        }
+        else
+        {
+            $style = 'fal';
+        }
+
+        array_unshift($class, $style . ' fa-' . $icon);
 
         $el->addAttributes(['class' => $class]);
 
