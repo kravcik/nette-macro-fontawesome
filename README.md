@@ -41,8 +41,8 @@ Thx [@peldax](https://github.com/peldax) is also  possible change html element. 
 
 # Versions
 
-| PHP           | Nette         | Package  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| PHP | Nette| Font Awesome | Bootstrap | Package  |
+|:---:|:----:|:------------:|:-----:|:----:|
+| 7.3 | 3.0  |  5		   | 4 | v3 |
+| 7.1 | 2.4  |  5		   | 3  |  v2 |
+| 5.6 | 2.4  |  4		   | 3 |  v1 |
