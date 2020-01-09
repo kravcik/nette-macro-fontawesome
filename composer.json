@@ -10,14 +10,15 @@
     },
 
     "require": {
-        "php": ">=5.6.0",
-        "latte/latte": ">=2.3",
-        "nette/utils": ">=2.3"
+        "php": ">=7.1",
+        "latte/latte": ">=2.6",
+        "nette/utils": ">=3.1"
     },
 
     "require-dev": {
         "tracy/tracy": "*",
-        "nette/tester": "*"
+        "nette/tester": "*",
+        "modul-is/coding-standard": "^1"
     },
 
     "autoload": {
