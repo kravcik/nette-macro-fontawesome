@@ -38,3 +38,11 @@ Thx [@peldax](https://github.com/peldax) is also  possible change html element. 
 2. `fa-` + SIZE + `x`
 3. FW - if TRUE disable insert of `fa-fw`
 4. Style - `fas` / `far` / `fal` / `fab`
+
+# Versions
+
+| PHP           | Nette         | Package  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
