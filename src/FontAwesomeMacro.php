@@ -62,7 +62,7 @@ class FontAwesomeMacro extends \Latte\Macros\MacroSet
 	 * @option int size (set size - e.g. 2) - generate 2x
 	 * @option bool fixed-width (default true)
 	 */
-	public static function renderIcon(string $icon, array $arguments): \Nette\Utils\Html
+	public static function renderIcon(string $icon, array $arguments = []): \Nette\Utils\Html
 	{
 		$isIndex = array_values($arguments) === $arguments;
 
