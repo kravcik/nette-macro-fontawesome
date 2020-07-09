@@ -27,6 +27,11 @@ class FontAwesomeMacro extends \Latte\Macros\MacroSet
 		'black-50',
 		'white-50'
 	];
+	
+	/**
+	 * @var string
+	 */
+	public static $defaultStyle = 'fal';
 
 
 	/**
@@ -110,7 +115,7 @@ class FontAwesomeMacro extends \Latte\Macros\MacroSet
 		}
 		else
 		{
-			$style = 'fal';
+			$style = self::$defaultStyle;
 		}
 
 		array_unshift($class, $style . ' fa-' . $icon);
