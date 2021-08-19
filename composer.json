@@ -18,7 +18,9 @@
     "require-dev": {
         "tracy/tracy": "*",
         "nette/tester": "*",
-        "modul-is/coding-standard": "v3.x-dev"
+        "modul-is/coding-standard": "v3.x-dev",
+        "phpstan/phpstan": "^0.12",
+        "phpstan/phpstan-nette": "^0.12"
     },
 
     "autoload": {

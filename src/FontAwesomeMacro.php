@@ -7,7 +7,7 @@ declare(strict_types=1);
 
 namespace Kravcik\Macros;
 
-class FontAwesomeMacro extends \Latte\Macros\MacroSet
+final class FontAwesomeMacro extends \Latte\Macros\MacroSet
 {
 	public static string $defaultStyle = 'fal';
 
