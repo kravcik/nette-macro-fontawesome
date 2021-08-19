@@ -43,6 +43,7 @@ Thx [@peldax](https://github.com/peldax) is also  possible change html element. 
 
 | PHP | Nette| Font Awesome | Bootstrap | Package  |
 |:---:|:----:|:------------:|:-----:|:----:|
+| 8.0 | 3.2  |  5		   | 4 | v4 |
 | 7.3 | 3.0  |  5		   | 4 | v3 |
 | 7.1 | 2.4  |  5		   | 3  |  v2 |
 | 5.6 | 2.4  |  4		   | 3 |  v1 |
