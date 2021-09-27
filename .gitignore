@@ -1,3 +1,4 @@
 vendor
 tests/temp/*
 nbproject
+/.idea

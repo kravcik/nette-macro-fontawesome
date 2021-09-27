@@ -7,12 +7,14 @@ declare(strict_types=1);
 
 namespace Kravcik\Macros;
 
-class FontAwesomeMacro extends \Latte\Macros\MacroSet
+final class FontAwesomeMacro extends \Latte\Macros\MacroSet
 {
+	public static string $defaultStyle = 'fal';
+
 	/**
 	 * BS4 colors
 	 */
-	private static $colorClass = [
+	private static array $colorClass = [
 		'primary',
 		'secondary',
 		'success',
@@ -27,11 +29,6 @@ class FontAwesomeMacro extends \Latte\Macros\MacroSet
 		'black-50',
 		'white-50'
 	];
-	
-	/**
-	 * @var string
-	 */
-	public static $defaultStyle = 'fal';
 
 
 	/**
@@ -48,7 +45,7 @@ class FontAwesomeMacro extends \Latte\Macros\MacroSet
 
 
 	/**
-	 * Custom icon macro          
+	 * Custom icon macro
 	 */
 	public function icon(\Latte\MacroNode $node, \Latte\PhpWriter $writer): string
 	{
@@ -61,7 +58,7 @@ class FontAwesomeMacro extends \Latte\Macros\MacroSet
 	/**
 	 * Render font-awesome icon
 	 * @note Options can be set by like associate array or like simple array in right order
-	 *     
+	 *
 	 *
 	 * @option string color (set color - e.g. red) - generate color-red || ignore (bootstrap class like success
 	 * @option int size (set size - e.g. 2) - generate 2x
