@@ -8,21 +8,22 @@
     "support": {
         "issues": "https://github.com/kravcik/nette-macro-fontawesome/issues"
     },
-
     "require": {
         "php": "^8.0",
-        "latte/latte": "^2",
+        "latte/latte": ">2 <3",
         "nette/utils": "^3"
     },
-
     "require-dev": {
         "tracy/tracy": "*",
         "nette/tester": "*",
         "modul-is/coding-standard": "v3.x-dev",
         "phpstan/phpstan": "^0.12",
         "phpstan/phpstan-nette": "^0.12"
-    },
-
+    },	
+	"suggest":
+	{
+		"kravcik/latte-font-awesome-icon": "For Latte 3 you should upgrade to another package 'kravcik/latte-font-awesome-icon'"
+	},	
     "autoload": {
         "psr-4": {
             "Kravcik\\Macros\\": "src/"
