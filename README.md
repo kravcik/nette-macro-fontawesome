@@ -1,3 +1,5 @@
+This repo is discontinued - for Latte3 and PHP8.1 you should look here: https://github.com/kravcik/latte-font-awesome-icon
+
 Simple macro for generating Font Awesome icons. First parameter is required. Parameters can be set in order or randomly with string keys (macro detects if it's getting an associative array).
 
 
